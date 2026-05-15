@@ -468,10 +468,6 @@ def page_ransomware():
                                              options=["Critical","High","Medium","Low"],
                                              placeholder="All severities", key="rw_severity")
 
-        if st.button("🔄 Refresh data", key="refresh_rw"):
-            load_ransomware.clear()
-            st.rerun()
-
         _sidebar_footer()
 
     page_header("🔴 Ransomware Live", "Real-time victim tracker · Powered by ransomware.live")
