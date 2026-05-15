@@ -342,11 +342,6 @@ def page_cyber_news():
                                           options=["Critical","High","Medium","Low","Unknown"],
                                           placeholder="All impacts",    key="news_impact")
 
-        # Manual refresh button to bust cache
-        if st.button("🔄 Refresh data", key="refresh_incidents"):
-            load_incidents.clear()
-            st.rerun()
-
         _sidebar_footer()
 
     page_header("📰 Cyber News", "Threat intelligence · Incident feed · Real-time monitoring")
